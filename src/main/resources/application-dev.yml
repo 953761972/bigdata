@@ -1,0 +1,18 @@
+#jeecg专用配置
+jeecg :
+  #积木报表设置
+  jmreport:
+    mode: dev
+    #是否需要校验token
+    is_verify_token: false
+    #必须校验方法
+    verify_methods: remove,delete,save,add,update
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://111.229.211.186:3306/renren_security?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+      username: root
+      password: Admin
